@@ -1,1 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.paloArriba {
+  font-size: 100px;
+}
+.paloAbajo {
+  font-size: 100px;
+  transform: rotate(180deg);
+}
+.cardValue {
+  font-size: 100px;
+}
+.red {
+  color: red;
+}

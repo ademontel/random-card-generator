@@ -12,18 +12,34 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div id="carta" class="card mx-auto mt-5 mb-5" style="width: 380px; height:500px;">
+        <div class="card-body">
+          <p class="palo paloArriba text-start"></p>
+          <h1 class="cardValue"></h1>
+          <p class="palo paloAbajo text-start"></p>
+        </div>
       </div>
+      <div class="d-flex flex-column align-items-center">
+        <button id="boton" type="button" class="btn btn-light mb-3">Próxima carta</button>
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <label class="sr-only" for="inlineFormInput"></label>
+              <input type="text" class="form-control mb-2" id="inputWidth" placeholder="Set width in px">
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="inlineFormInput"></label>
+              <input type="text" class="form-control mb-2" id="inputHeight" placeholder="Set height in px">
+            </div>
+            <div class="col-auto">
+              <button id="botonSize" type="button" class="btn btn-primary mb-2">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     </div>
   </body>
 </html>
